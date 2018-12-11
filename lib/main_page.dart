@@ -15,14 +15,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainState extends State<MainPage> {
-  _MainState(){
-    _readJson();
-  }
-  void _readJson() async {
-    if (ResourceUtil.items == null || ResourceUtil.items.isEmpty) {
-      ResourceUtil.items = await ResourceUtil.readCityJson(context);
-    }
-  }
 
   @override
   Widget build(BuildContext context) {

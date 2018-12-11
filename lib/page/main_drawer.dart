@@ -9,6 +9,7 @@ import 'package:flutter_weather/view/to_app_bar.dart';
 import 'package:flutter_weather/const/size_const.dart';
 import 'package:flutter_weather/data/CityItem.dart';
 import 'package:flutter_weather/util/ResourceUtil.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 class MainDrawer extends StatefulWidget {
   @override
@@ -30,8 +31,15 @@ class _DrawerState extends State<MainDrawer> {
       constraints: BoxConstraints.expand(height: 300.0),
       child: Stack(
         children: <Widget>[
-//          _imageCover("weather_background.jpg"),
           _imageCover("white_cloud.jpg", size: 300.0),
+          Positioned(
+            child: FlareActor(
+              "assets/animation/sunny_rotate.flr",
+              animation: "sunny_rotate",
+              fit: BoxFit.contain,
+              alignment: Alignment.topRight,
+            ),
+          ),
           Positioned(
               bottom: 10.0,
               child: Text(
@@ -74,15 +82,23 @@ class _DrawerState extends State<MainDrawer> {
         ));
   }
 
-  void _sureNotEmpty() async {
-    if (ResourceUtil.items == null || ResourceUtil.items.isEmpty) {
-      ResourceUtil.items = await ResourceUtil.readCityJson(context);
+  void _sureNotEmpty(context) async {
+    if (_listIsEmpty()) {
+      ResourceUtil.readCityJson(context).then((list) {
+        setState(() {
+          ResourceUtil.items = list;
+        });
+      });
     }
+  }
+
+  bool _listIsEmpty() {
+    return ResourceUtil.items == null || ResourceUtil.items.isEmpty;
   }
 
   @override
   Widget build(BuildContext context) {
-    _sureNotEmpty();
+    _sureNotEmpty(context);
     return ConstrainedBox(
       constraints: const BoxConstraints.expand(width: 300.0),
       child: Container(
@@ -97,9 +113,34 @@ class _DrawerState extends State<MainDrawer> {
               return _cityWidget(item);
             }
           },
-          itemCount: ResourceUtil.items.length,
+          itemCount: _listIsEmpty() ? 1 : ResourceUtil.items.length + 1,
         ),
       ),
     );
   }
 }
+
+//CustomScrollView(
+//slivers: <Widget>[
+//SliverAppBar(
+//pinned: true,
+//expandedHeight: 150.0,
+//flexibleSpace: _topBackground(),
+//),
+//SliverList(
+//delegate: SliverChildBuilderDelegate((context, index) {
+//if (_listIsEmpty()) {
+//return Center(
+//child: Text(
+//CONTENT_IS_EMPTY,
+//style: TextStyle(
+//color: Colors.white, fontSize: TEXT_SIZE_NORMAL),
+//),
+//);
+//} else {
+//var item = ResourceUtil.items[index];
+//return _cityWidget(item);
+//}
+//}, childCount: _listIsEmpty() ? 1 : ResourceUtil.items.length))
+//],
+//));

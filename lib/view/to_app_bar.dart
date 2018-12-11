@@ -23,3 +23,5 @@ class MainBar extends AppBar {
   final Color titleColor;
   final Color backgroundColor;
 }
+
+
