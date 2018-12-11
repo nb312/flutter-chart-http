@@ -119,28 +119,3 @@ class _DrawerState extends State<MainDrawer> {
     );
   }
 }
-
-//CustomScrollView(
-//slivers: <Widget>[
-//SliverAppBar(
-//pinned: true,
-//expandedHeight: 150.0,
-//flexibleSpace: _topBackground(),
-//),
-//SliverList(
-//delegate: SliverChildBuilderDelegate((context, index) {
-//if (_listIsEmpty()) {
-//return Center(
-//child: Text(
-//CONTENT_IS_EMPTY,
-//style: TextStyle(
-//color: Colors.white, fontSize: TEXT_SIZE_NORMAL),
-//),
-//);
-//} else {
-//var item = ResourceUtil.items[index];
-//return _cityWidget(item);
-//}
-//}, childCount: _listIsEmpty() ? 1 : ResourceUtil.items.length))
-//],
-//));
