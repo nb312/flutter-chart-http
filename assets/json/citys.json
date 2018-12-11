@@ -1,0 +1,1109 @@
+[
+  {
+    "id": 1280757,
+    "name": "Laojunmiao",
+    "country": "CN",
+    "coord": {
+      "lon": 97.73333,
+      "lat": 39.833328
+    }
+  },
+  {
+    "id": 1529626,
+    "name": "Baijiantan",
+    "country": "CN",
+    "coord": {
+      "lon": 85.183327,
+      "lat": 45.633331
+    }
+  },
+  {
+    "id": 1784178,
+    "name": "Zhoucun",
+    "country": "CN",
+    "coord": {
+      "lon": 117.816673,
+      "lat": 36.816669
+    }
+  },
+  {
+    "id": 1784253,
+    "name": "Zhongxing",
+    "country": "CN",
+    "coord": {
+      "lon": 118.679169,
+      "lat": 33.703892
+    }
+  },
+  {
+    "id": 1785462,
+    "name": "Zaoyang",
+    "country": "CN",
+    "coord": {
+      "lon": 112.754173,
+      "lat": 32.12722
+    }
+  },
+  {
+    "id": 1786455,
+    "name": "Yishui",
+    "country": "CN",
+    "coord": {
+      "lon": 118.628059,
+      "lat": 35.784721
+    }
+  },
+  {
+    "id": 1787837,
+    "name": "Xucheng",
+    "country": "CN",
+    "coord": {
+      "lon": 110.128838,
+      "lat": 20.35
+    }
+  },
+  {
+    "id": 1791056,
+    "name": "Dongyang",
+    "country": "CN",
+    "coord": {
+      "lon": 120.225281,
+      "lat": 29.26778
+    }
+  },
+  {
+    "id": 1791347,
+    "name": "Wucheng",
+    "country": "CN",
+    "coord": {
+      "lon": 118.17495,
+      "lat": 29.600771
+    }
+  },
+  {
+    "id": 1791464,
+    "name": "Wenling",
+    "country": "CN",
+    "coord": {
+      "lon": 121.360001,
+      "lat": 28.36694
+    }
+  },
+  {
+    "id": 1793089,
+    "name": "Taozhuang",
+    "country": "CN",
+    "coord": {
+      "lon": 117.333328,
+      "lat": 34.849998
+    }
+  },
+  {
+    "id": 1793385,
+    "name": "Tangjiazhuang",
+    "country": "CN",
+    "coord": {
+      "lon": 118.449997,
+      "lat": 39.73333
+    }
+  },
+  {
+    "id": 1793774,
+    "name": "Suozhen",
+    "country": "CN",
+    "coord": {
+      "lon": 118.104721,
+      "lat": 36.953892
+    }
+  },
+  {
+    "id": 1795632,
+    "name": "Shenjiamen",
+    "country": "CN",
+    "coord": {
+      "lon": 122.298019,
+      "lat": 29.957621
+    }
+  },
+  {
+    "id": 1795842,
+    "name": "Shaping",
+    "country": "CN",
+    "coord": {
+      "lon": 112.95652,
+      "lat": 22.75452
+    }
+  },
+  {
+    "id": 1795919,
+    "name": "Shancheng",
+    "country": "CN",
+    "coord": {
+      "lon": 116.081673,
+      "lat": 34.79528
+    }
+  },
+  {
+    "id": 1796236,
+    "name": "Shanghai",
+    "country": "CN",
+    "coord": {
+      "lon": 121.458061,
+      "lat": 31.222219
+    }
+  },
+  {
+    "id": 1800498,
+    "name": "Mingshui",
+    "country": "CN",
+    "coord": {
+      "lon": 117.5,
+      "lat": 36.716671
+    }
+  },
+  {
+    "id": 1801797,
+    "name": "Luoyang",
+    "country": "CN",
+    "coord": {
+      "lon": 118.681107,
+      "lat": 24.962219
+    }
+  },
+  {
+    "id": 1803334,
+    "name": "Linxi",
+    "country": "CN",
+    "coord": {
+      "lon": 118.433327,
+      "lat": 39.700001
+    }
+  },
+  {
+    "id": 1804979,
+    "name": "Juegang",
+    "country": "CN",
+    "coord": {
+      "lon": 121.185516,
+      "lat": 32.317371
+    }
+  },
+  {
+    "id": 1807553,
+    "name": "Huangchuan",
+    "country": "CN",
+    "coord": {
+      "lon": 115.039436,
+      "lat": 32.12722
+    }
+  },
+  {
+    "id": 1808747,
+    "name": "Hecun",
+    "country": "CN",
+    "coord": {
+      "lon": 114.111107,
+      "lat": 36.533329
+    }
+  },
+  {
+    "id": 1808963,
+    "name": "Handan",
+    "country": "CN",
+    "coord": {
+      "lon": 114.467781,
+      "lat": 36.600559
+    }
+  },
+  {
+    "id": 1811114,
+    "name": "Fenyi",
+    "country": "CN",
+    "coord": {
+      "lon": 114.668053,
+      "lat": 27.811171
+    }
+  },
+  {
+    "id": 1812981,
+    "name": "Deqing",
+    "country": "CN",
+    "coord": {
+      "lon": 119.9599,
+      "lat": 30.544849
+    }
+  },
+  {
+    "id": 1813892,
+    "name": "Dancheng",
+    "country": "CN",
+    "coord": {
+      "lon": 115.183327,
+      "lat": 33.633331
+    }
+  },
+  {
+    "id": 1815184,
+    "name": "Chengyang",
+    "country": "CN",
+    "coord": {
+      "lon": 118.832779,
+      "lat": 35.579441
+    }
+  },
+  {
+    "id": 1815667,
+    "name": "Changleng",
+    "country": "CN",
+    "coord": {
+      "lon": 115.816673,
+      "lat": 28.700001
+    }
+  },
+  {
+    "id": 1816406,
+    "name": "Bianzhuang",
+    "country": "CN",
+    "coord": {
+      "lon": 118.044724,
+      "lat": 34.84861
+    }
+  },
+  {
+    "id": 1817701,
+    "name": "Baihe",
+    "country": "CN",
+    "coord": {
+      "lon": 107.23333,
+      "lat": 22.15
+    }
+  },
+  {
+    "id": 2037913,
+    "name": "Linghai",
+    "country": "CN",
+    "coord": {
+      "lon": 121.366669,
+      "lat": 41.165279
+    }
+  },
+  {
+    "id": 2038274,
+    "name": "Boli",
+    "country": "CN",
+    "coord": {
+      "lon": 130.516663,
+      "lat": 45.76667
+    }
+  },
+  {
+    "id": 4070245,
+    "name": "Jones Crossroads",
+    "country": "US",
+    "coord": {
+      "lon": -85.484657,
+      "lat": 31.21073
+    }
+  },
+  {
+    "id": 4344544,
+    "name": "Vernon Parish",
+    "country": "US",
+    "coord": {
+      "lon": -93.183502,
+      "lat": 31.11685
+    }
+  },
+  {
+    "id": 4215307,
+    "name": "Pennick",
+    "country": "US",
+    "coord": {
+      "lon": -81.55899,
+      "lat": 31.313
+    }
+  },
+  {
+    "id": 5285039,
+    "name": "Black Bear Spring",
+    "country": "US",
+    "coord": {
+      "lon": -110.288139,
+      "lat": 31.386209
+    }
+  },
+  {
+    "id": 4673179,
+    "name": "Bee House",
+    "country": "US",
+    "coord": {
+      "lon": -98.081139,
+      "lat": 31.40266
+    }
+  },
+  {
+    "id": 4899519,
+    "name": "Lee County",
+    "country": "US",
+    "coord": {
+      "lon": -89.283432,
+      "lat": 41.750591
+    }
+  },
+  {
+    "id": 4898722,
+    "name": "Knox County",
+    "country": "US",
+    "coord": {
+      "lon": -90.200119,
+      "lat": 40.933369
+    }
+  },
+  {
+    "id": 5004681,
+    "name": "Ottawa County",
+    "country": "US",
+    "coord": {
+      "lon": -86.000603,
+      "lat": 42.95002
+    }
+  },
+  {
+    "id": 4985190,
+    "name": "Bay County",
+    "country": "US",
+    "coord": {
+      "lon": -84.016647,
+      "lat": 43.73336
+    }
+  },
+  {
+    "id": 5000477,
+    "name": "Macomb County",
+    "country": "US",
+    "coord": {
+      "lon": -82.949928,
+      "lat": 42.700031
+    }
+  },
+  {
+    "id": 4997130,
+    "name": "Ingham County",
+    "country": "US",
+    "coord": {
+      "lon": -84.383301,
+      "lat": 42.60004
+    }
+  },
+  {
+    "id": 5009706,
+    "name": "Shiawassee County",
+    "country": "US",
+    "coord": {
+      "lon": -84.149971,
+      "lat": 42.950031
+    }
+  },
+  {
+    "id": 5128316,
+    "name": "Nassau County",
+    "country": "US",
+    "coord": {
+      "lon": -73.582901,
+      "lat": 40.75066
+    }
+  },
+  {
+    "id": 6941775,
+    "name": "Kings County",
+    "country": "US",
+    "coord": {
+      "lon": -73.949577,
+      "lat": 40.650101
+    }
+  },
+  {
+    "id": 5113792,
+    "name": "Cortland County",
+    "country": "US",
+    "coord": {
+      "lon": -76.082977,
+      "lat": 42.600071
+    }
+  },
+  {
+    "id": 5112738,
+    "name": "City Line",
+    "country": "US",
+    "coord": {
+      "lon": -73.887077,
+      "lat": 40.676208
+    }
+  },
+  {
+    "id": 5118116,
+    "name": "Fulton County",
+    "country": "US",
+    "coord": {
+      "lon": -74.449577,
+      "lat": 43.116741
+    }
+  },
+  {
+    "id": 5122534,
+    "name": "Jamestown",
+    "country": "US",
+    "coord": {
+      "lon": -79.235329,
+      "lat": 42.097
+    }
+  },
+  {
+    "id": 6332485,
+    "name": "Queensbridge Houses",
+    "country": "US",
+    "coord": {
+      "lon": -73.945,
+      "lat": 40.75528
+    }
+  },
+  {
+    "id": 7250946,
+    "name": "Carnegie Hill",
+    "country": "US",
+    "coord": {
+      "lon": -73.95472,
+      "lat": 40.783329
+    }
+  },
+  {
+    "id": 5133668,
+    "name": "Rensselaer County",
+    "country": "US",
+    "coord": {
+      "lon": -73.482887,
+      "lat": 42.716751
+    }
+  },
+  {
+    "id": 5161640,
+    "name": "Mahoning County",
+    "country": "US",
+    "coord": {
+      "lon": -80.766472,
+      "lat": 41.03339
+    }
+  },
+  {
+    "id": 5151896,
+    "name": "Delaware County",
+    "country": "US",
+    "coord": {
+      "lon": -83.000183,
+      "lat": 40.266731
+    }
+  },
+  {
+    "id": 5145576,
+    "name": "Allen County",
+    "country": "US",
+    "coord": {
+      "lon": -84.083282,
+      "lat": 40.76672
+    }
+  },
+  {
+    "id": 5153362,
+    "name": "Erie County",
+    "country": "US",
+    "coord": {
+      "lon": -82.599899,
+      "lat": 41.350052
+    }
+  },
+  {
+    "id": 5221078,
+    "name": "Bristol County",
+    "country": "US",
+    "coord": {
+      "lon": -71.271721,
+      "lat": 41.71677
+    }
+  },
+  {
+    "id": 5393068,
+    "name": "Santa Cruz County",
+    "country": "US",
+    "coord": {
+      "lon": -122.051071,
+      "lat": 37.066608
+    }
+  },
+  {
+    "id": 5391997,
+    "name": "San Francisco County",
+    "country": "US",
+    "coord": {
+      "lon": -122.45108,
+      "lat": 37.766602
+    }
+  },
+  {
+    "id": 5423573,
+    "name": "Grand Junction",
+    "country": "US",
+    "coord": {
+      "lon": -108.550652,
+      "lat": 39.063869
+    }
+  },
+  {
+    "id": 5525886,
+    "name": "Maverick County",
+    "country": "US",
+    "coord": {
+      "lon": -100.350349,
+      "lat": 28.76692
+    }
+  },
+  {
+    "id": 5522430,
+    "name": "Gray County",
+    "country": "US",
+    "coord": {
+      "lon": -100.802002,
+      "lat": 35.416698
+    }
+  },
+  {
+    "id": 5128638,
+    "name": "New York",
+    "country": "US",
+    "coord": {
+      "lon": -75.499901,
+      "lat": 43.000351
+    }
+  },
+  {
+    "id": 7169710,
+    "name": "City of Cape Canaveral",
+    "country": "US",
+    "coord": {
+      "lon": -80.60567,
+      "lat": 28.39367
+    }
+  },
+  {
+    "id": 4717770,
+    "name": "Parsley Crossing",
+    "country": "US",
+    "coord": {
+      "lon": -98.112259,
+      "lat": 31.567659
+    }
+  },
+  {
+    "id": 5308878,
+    "name": "Pima County",
+    "country": "US",
+    "coord": {
+      "lon": -112.003464,
+      "lat": 32.000351
+    }
+  },
+  {
+    "id": 7262440,
+    "name": "Valencia West",
+    "country": "US",
+    "coord": {
+      "lon": -111.114143,
+      "lat": 32.132381
+    }
+  },
+  {
+    "id": 5319409,
+    "name": "Vanar",
+    "country": "US",
+    "coord": {
+      "lon": -109.095062,
+      "lat": 32.241192
+    }
+  },
+  {
+    "id": 4316180,
+    "name": "Bedford",
+    "country": "US",
+    "coord": {
+      "lon": -91.015106,
+      "lat": 32.240978
+    }
+  },
+  {
+    "id": 5454967,
+    "name": "Alvarado",
+    "country": "US",
+    "coord": {
+      "lon": -106.237213,
+      "lat": 32.13649
+    }
+  },
+  {
+    "id": 4619773,
+    "name": "Dyer County",
+    "country": "US",
+    "coord": {
+      "lon": -89.40007,
+      "lat": 36.050072
+    }
+  },
+  {
+    "id": 4652680,
+    "name": "Rehoboth",
+    "country": "US",
+    "coord": {
+      "lon": -89.25563,
+      "lat": 36.032291
+    }
+  },
+  {
+    "id": 2110809,
+    "name": "Tateno",
+    "country": "JP",
+    "coord": {
+      "lon": 140.116669,
+      "lat": 36.033329
+    }
+  },
+  {
+    "id": 1848119,
+    "name": "Yugawa",
+    "country": "JP",
+    "coord": {
+      "lon": 138.233337,
+      "lat": 36.033329
+    }
+  },
+  {
+    "id": 2111043,
+    "name": "Shiogasaki",
+    "country": "JP",
+    "coord": {
+      "lon": 140.550003,
+      "lat": 36.333328
+    }
+  },
+  {
+    "id": 6355530,
+    "name": "Almería",
+    "country": "ES",
+    "coord": {
+      "lon": -2.42778,
+      "lat": 36.772511
+    }
+  },
+  {
+    "id": 2515136,
+    "name": "La Vega de Acá",
+    "country": "ES",
+    "coord": {
+      "lon": -2.43526,
+      "lat": 36.836449
+    }
+  },
+  {
+    "id": 1845106,
+    "name": "Ch’ungch’ŏng-bukto",
+    "country": "KR",
+    "coord": {
+      "lon": 128,
+      "lat": 36.75
+    }
+  },
+  {
+    "id": 6357744,
+    "name": "Monachil",
+    "country": "ES",
+    "coord": {
+      "lon": -3.54034,
+      "lat": 37.13715
+    }
+  },
+  {
+    "id": 4896861,
+    "name": "Illinois",
+    "country": "US",
+    "coord": {
+      "lon": -89.250366,
+      "lat": 40.00032
+    }
+  },
+  {
+    "id": 4748806,
+    "name": "Breaks",
+    "country": "US",
+    "coord": {
+      "lon": -82.280983,
+      "lat": 37.29594
+    }
+  },
+  {
+    "id": 4885392,
+    "name": "Boone County",
+    "country": "US",
+    "coord": {
+      "lon": -88.816772,
+      "lat": 42.333351
+    }
+  },
+  {
+    "id": 5046749,
+    "name": "Scott County",
+    "country": "US",
+    "coord": {
+      "lon": -93.500793,
+      "lat": 44.633301
+    }
+  },
+  {
+    "id": 5141784,
+    "name": "Ulster County",
+    "country": "US",
+    "coord": {
+      "lon": -74.250153,
+      "lat": 41.88343
+    }
+  },
+  {
+    "id": 5128594,
+    "name": "New York County",
+    "country": "US",
+    "coord": {
+      "lon": -73.966248,
+      "lat": 40.783428
+    }
+  },
+  {
+    "id": 5217179,
+    "name": "Verona",
+    "country": "US",
+    "coord": {
+      "lon": -79.843102,
+      "lat": 40.506458
+    }
+  },
+  {
+    "id": 5251040,
+    "name": "Dunn County",
+    "country": "US",
+    "coord": {
+      "lon": -91.883507,
+      "lat": 44.949959
+    }
+  },
+  {
+    "id": 5430806,
+    "name": "Mesa County",
+    "country": "US",
+    "coord": {
+      "lon": -108.467308,
+      "lat": 39.033321
+    }
+  },
+  {
+    "id": 5417258,
+    "name": "Clifton",
+    "country": "US",
+    "coord": {
+      "lon": -108.448982,
+      "lat": 39.09193
+    }
+  },
+  {
+    "id": 5709906,
+    "name": "Washoe County",
+    "country": "US",
+    "coord": {
+      "lon": -119.626312,
+      "lat": 40.750179
+    }
+  },
+  {
+    "id": 5528613,
+    "name": "Potter County",
+    "country": "US",
+    "coord": {
+      "lon": -101.900459,
+      "lat": 35.416721
+    }
+  },
+  {
+    "id": 5523520,
+    "name": "Howard County",
+    "country": "US",
+    "coord": {
+      "lon": -101.450401,
+      "lat": 32.300121
+    }
+  },
+  {
+    "id": 4929772,
+    "name": "Barnstable County",
+    "country": "US",
+    "coord": {
+      "lon": -70.249458,
+      "lat": 41.666779
+    }
+  },
+  {
+    "id": 5733534,
+    "name": "Jefferson County",
+    "country": "US",
+    "coord": {
+      "lon": -121.334488,
+      "lat": 44.633171
+    }
+  },
+  {
+    "id": 5738690,
+    "name": "Madras",
+    "country": "US",
+    "coord": {
+      "lon": -121.129494,
+      "lat": 44.63345
+    }
+  },
+  {
+    "id": 4858159,
+    "name": "Gas Light Mobile Home Villa",
+    "country": "US",
+    "coord": {
+      "lon": -92.41658,
+      "lat": 42.54137
+    }
+  },
+  {
+    "id": 4857406,
+    "name": "Forest City",
+    "country": "US",
+    "coord": {
+      "lon": -93.637161,
+      "lat": 43.262459
+    }
+  },
+  {
+    "id": 4167465,
+    "name": "Page Park",
+    "country": "US",
+    "coord": {
+      "lon": -81.86203,
+      "lat": 26.579241
+    }
+  },
+  {
+    "id": 7190149,
+    "name": "Ocean Waterway Mobile Home Park",
+    "country": "US",
+    "coord": {
+      "lon": -80.158791,
+      "lat": 26.059799
+    }
+  },
+  {
+    "id": 7150586,
+    "name": "Countryside",
+    "country": "US",
+    "coord": {
+      "lon": -105.119438,
+      "lat": 39.88583
+    }
+  },
+  {
+    "id": 5427691,
+    "name": "La Fruto",
+    "country": "US",
+    "coord": {
+      "lon": -105.898628,
+      "lat": 37.41473
+    }
+  },
+  {
+    "id": 5364038,
+    "name": "La Patera",
+    "country": "US",
+    "coord": {
+      "lon": -119.842079,
+      "lat": 34.4375
+    }
+  },
+  {
+    "id": 5377708,
+    "name": "North Norton",
+    "country": "US",
+    "coord": {
+      "lon": -117.252823,
+      "lat": 34.105572
+    }
+  },
+  {
+    "id": 5398168,
+    "name": "Spreckels Junction",
+    "country": "US",
+    "coord": {
+      "lon": -121.630783,
+      "lat": 36.658291
+    }
+  },
+  {
+    "id": 5323121,
+    "name": "Alisal",
+    "country": "US",
+    "coord": {
+      "lon": -121.617722,
+      "lat": 36.679131
+    }
+  },
+  {
+    "id": 5323012,
+    "name": "Alessandro",
+    "country": "US",
+    "coord": {
+      "lon": -117.270317,
+      "lat": 33.886131
+    }
+  },
+  {
+    "id": 5325943,
+    "name": "Ballou",
+    "country": "US",
+    "coord": {
+      "lon": -117.607002,
+      "lat": 34.049179
+    }
+  },
+  {
+    "id": 5331874,
+    "name": "Burdell",
+    "country": "US",
+    "coord": {
+      "lon": -122.565262,
+      "lat": 38.15797
+    }
+  },
+  {
+    "id": 5372844,
+    "name": "Middleton",
+    "country": "US",
+    "coord": {
+      "lon": -122.263031,
+      "lat": 38.206581
+    }
+  },
+  {
+    "id": 5342441,
+    "name": "Del Rey Oaks",
+    "country": "US",
+    "coord": {
+      "lon": -121.834953,
+      "lat": 36.593288
+    }
+  },
+  {
+    "id": 5371068,
+    "name": "Mather Field",
+    "country": "US",
+    "coord": {
+      "lon": -121.29689,
+      "lat": 38.56657
+    }
+  },
+  {
+    "id": 5332698,
+    "name": "Calexico",
+    "country": "US",
+    "coord": {
+      "lon": -115.498878,
+      "lat": 32.678951
+    }
+  },
+  {
+    "id": 5321473,
+    "name": "Winslow",
+    "country": "US",
+    "coord": {
+      "lon": -110.697357,
+      "lat": 35.024189
+    }
+  },
+  {
+    "id": 1809104,
+    "name": "Haidian",
+    "country": "CN",
+    "coord": {
+      "lon": 116.299171,
+      "lat": 39.979172
+    }
+  },
+  {
+    "id": 6834870,
+    "name": "Haitou",
+    "country": "CN",
+    "coord": {
+      "lon": 110.38295,
+      "lat": 21.20347
+    }
+  },
+  {
+    "id": 1809104,
+    "name": "Haidian",
+    "country": "CN",
+    "coord": {
+      "lon": 116.299171,
+      "lat": 39.979172
+    }
+  },
+  {
+    "id": 6834870,
+    "name": "Haitou",
+    "country": "CN",
+    "coord": {
+      "lon": 110.38295,
+      "lat": 21.20347
+    }
+  },
+  {
+    "id": 2033115,
+    "name": "Zhenzhuquan",
+    "country": "CN",
+    "coord": {
+      "lon": 116.419724,
+      "lat": 40.55389
+    }
+  },
+  {
+    "id": 2033458,
+    "name": "Yanqing",
+    "country": "CN",
+    "coord": {
+      "lon": 115.966667,
+      "lat": 40.466671
+    }
+  },
+  {
+    "id": 2033458,
+    "name": "Yanqing",
+    "country": "CN",
+    "coord": {
+      "lon": 115.966667,
+      "lat": 40.466671
+    }
+  },
+  {
+    "id": 1257986,
+    "name": "Rumbak",
+    "country": "IN",
+    "coord": {
+      "lon": 77.416664,
+      "lat": 34.049999
+    }
+  }
+]
