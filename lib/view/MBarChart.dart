@@ -7,19 +7,19 @@ import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart';
 import 'char_point.dart';
 
-class MLineChart extends StatelessWidget {
-  MLineChart(this.points);
+class MBarChart extends StatelessWidget {
+  MBarChart(this.points);
 
-  final List<LinePoint> points;
+  final List<BarPoint> points;
 
-  List<Series<LinePoint, num>> datumList() {
+  List<Series<BarPoint, String>> datumList() {
     return [
-      Series<LinePoint, num>(
-          id: "line",
+      Series<BarPoint, String>(
+          id: "bar",
           data: points,
-          domainFn: (LinePoint point, _) => point.x,
-          measureFn: (LinePoint p, _) => p.y,
-          displayName: "line")
+          domainFn: (BarPoint point, _) => point.name,
+          measureFn: (BarPoint p, _) => p.y,
+          displayName: "bar")
     ];
   }
 
@@ -27,8 +27,7 @@ class MLineChart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       constraints: BoxConstraints.expand(),
-      child: LineChart(datumList()),
+      child: BarChart(datumList()),
     );
   }
 }
-

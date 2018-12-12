@@ -12,7 +12,10 @@ import 'package:flutter_weather/data/event/base_event.dart';
 import 'package:flutter_weather/http/HttpUtil.dart';
 import 'package:flutter_weather/data/CurrentWeatherItem.dart';
 import 'package:flutter_weather/view/MLineChart.dart';
-import 'package:flutter_weather/view/LinePoint.dart';
+import 'package:flutter_weather/view/char_point.dart';
+import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
+import 'package:flutter_weather/const/color_const.dart';
+import 'package:flutter_weather/view/MBarChart.dart';
 
 class TodayPage extends StatefulWidget {
   @override
@@ -56,7 +59,7 @@ class _TodayState extends State<TodayPage> {
 
   Widget _top() {
     return Container(
-      constraints: BoxConstraints.expand(height: 300.0),
+      constraints: BoxConstraints.expand(height: 200.0),
       child: Stack(
         children: <Widget>[
           Container(
@@ -108,8 +111,8 @@ class _TodayState extends State<TodayPage> {
   Widget _chartLine() {
     if (weatherItem == null) return Container();
     var list = List<LinePoint>();
-    var p1 = LinePoint(0, weatherItem.temp);
-    var p2 = LinePoint(1, weatherItem.pressure);
+    var p1 = LinePoint(0, weatherItem.temp / 2.0);
+    var p2 = LinePoint(1, weatherItem.pressure / 10.0);
     var p3 = LinePoint(2, weatherItem.humidity);
     list.add(p1);
     list.add(p2);
@@ -117,12 +120,59 @@ class _TodayState extends State<TodayPage> {
     return MLineChart(list);
   }
 
+  Widget _chartBar() {
+    if (weatherItem == null) return Container();
+    var list = List<BarPoint>();
+    var p1 = BarPoint("temp", weatherItem.temp / 2.0);
+    var p2 = BarPoint("pressure", weatherItem.pressure / 10.0);
+    var p3 = BarPoint("humidity", weatherItem.humidity);
+    list.add(p1);
+    list.add(p2);
+    list.add(p3);
+    return MBarChart(list);
+  }
+
+  Widget _tabView() {
+    return DefaultTabController(
+        length: 3,
+        child: Column(
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 10.0),
+              child: TabBar(
+                tabs: [
+                  Tab(
+                    text: "Line",
+                  ),
+                  Tab(text: "Bar"),
+                  Tab(text: "Circle"),
+                ],
+                labelColor: Colors.white,
+                unselectedLabelColor: MAIN_COLOR,
+                indicatorSize: TabBarIndicatorSize.tab,
+                indicator: BubbleTabIndicator(
+                    indicatorColor: MAIN_COLOR,
+                    indicatorHeight: 25.0,
+                    tabBarIndicatorSize: TabBarIndicatorSize.label),
+              ),
+            ),
+            Expanded(
+              child: TabBarView(children: [
+                _chartLine(),
+                _chartBar(),
+                _chartLine(),
+              ]),
+            )
+          ],
+        ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         child: Column(
-          children: <Widget>[_top(), Expanded(child: _chartLine())],
+          children: <Widget>[_top(), Expanded(child: _tabView())],
         ),
       ),
     );

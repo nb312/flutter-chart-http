@@ -29,7 +29,7 @@ class ResourceUtil {
   static Image imageCover(name, {double size}) {
     return Image.asset(
       "$ASSET_IMAGE_PATH$name",
-      fit: BoxFit.fitHeight,
+      fit: BoxFit.cover,
       width: size,
       height: size,
     );
