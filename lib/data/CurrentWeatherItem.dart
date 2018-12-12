@@ -28,7 +28,7 @@ class CurrentWeatherItem {
     JsonDecoder decoder = new JsonDecoder();
     var current = await decoder.convert(body);
     var main = current["main"];
-    var w = current["weather"]["main"];
+    var w = current["weather"][0]["main"];
     var item = CurrentWeatherItem(
       time: current["dt"],
       temp: main["temp"],

@@ -87,8 +87,7 @@ class _DrawerState extends State<MainDrawer> {
             var event = CityEvent(cityItem: item);
             EventUtil.busEvent.fire(event);
             print("city.name: ${item.name},id: ${item.id}");
-//            HttpUtil.currentWeather(item.id);
-//            HttpUtil.forecastWeather(item.id);
+            Navigator.pop(context);
           },
           leading: CircleAvatar(
             child: _textWhite(item.name[0].toUpperCase(),

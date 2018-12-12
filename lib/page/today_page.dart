@@ -45,7 +45,7 @@ class _TodayState extends State<TodayPage> {
       setState(() {
         cityItem = event.cityItem;
       });
-      _updateWeather(cityItem);
+      _updateWeather(event.cityItem);
     });
   }
 
@@ -54,7 +54,7 @@ class _TodayState extends State<TodayPage> {
     var weather = await HttpUtil.currentWeather(item.id);
     print("weather:${weather.dateString()}");
     setState(() {
-      weatherItem = weather ?? weatherItem;
+      weatherItem = weather == null ? weatherItem : weather;
     });
   }
 
