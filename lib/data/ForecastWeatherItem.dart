@@ -12,19 +12,19 @@ class ForecastWeatherItem {
       this.temp,
       this.pressure,
       this.humidity,
-      this.temp_min,
-      this.temp_max,
-      this.sea_level,
-      this.grnd_level});
+      this.tempMin,
+      this.tempMax,
+      this.seaLevel,
+      this.grndLevel});
 
   final int time;
   final double temp;
   final double pressure;
   final double humidity;
-  final double temp_min;
-  final double temp_max;
-  final double sea_level;
-  final double grnd_level;
+  final double tempMin;
+  final double tempMax;
+  final double seaLevel;
+  final double grndLevel;
 
   static Future<ForecastWeatherItem> _pareItem(itemJson) async {
     var main = itemJson["main"];
@@ -33,10 +33,10 @@ class ForecastWeatherItem {
       temp: main["temp"],
       pressure: main["pressure"].toDouble(),
       humidity: main["humidity"].toDouble(),
-      temp_min: main["temp_min"].toDouble(),
-      temp_max: main["temp_max"].toDouble(),
-      sea_level: main["sea_level"].toDouble(),
-      grnd_level: main["grnd_level"].toDouble(),
+      tempMin: main["temp_min"].toDouble(),
+      tempMax: main["temp_max"].toDouble(),
+      seaLevel: main["sea_level"].toDouble(),
+      grndLevel: main["grnd_level"].toDouble(),
     );
     return item;
   }

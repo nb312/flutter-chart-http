@@ -11,6 +11,8 @@ import 'package:flutter_weather/const/size_const.dart';
 import 'package:flutter_weather/data/event/base_event.dart';
 import 'package:flutter_weather/http/HttpUtil.dart';
 import 'package:flutter_weather/data/CurrentWeatherItem.dart';
+import 'package:flutter_weather/view/MLineChart.dart';
+import 'package:flutter_weather/view/LinePoint.dart';
 
 class TodayPage extends StatefulWidget {
   @override
@@ -103,14 +105,24 @@ class _TodayState extends State<TodayPage> {
     );
   }
 
+  Widget _chartLine() {
+    if (weatherItem == null) return Container();
+    var list = List<LinePoint>();
+    var p1 = LinePoint(0, weatherItem.temp);
+    var p2 = LinePoint(1, weatherItem.pressure);
+    var p3 = LinePoint(2, weatherItem.humidity);
+    list.add(p1);
+    list.add(p2);
+    list.add(p3);
+    return MLineChart(list);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         child: Column(
-          children: <Widget>[
-            _top(),
-          ],
+          children: <Widget>[_top(), Expanded(child: _chartLine())],
         ),
       ),
     );
