@@ -17,3 +17,10 @@ class BarPoint {
   final String name;
   final num y;
 }
+
+class PiePoint {
+  PiePoint(this.key, this.value);
+
+  final num key;
+  final num value;
+}

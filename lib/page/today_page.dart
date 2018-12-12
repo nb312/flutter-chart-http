@@ -16,6 +16,7 @@ import 'package:flutter_weather/view/char_point.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:flutter_weather/const/color_const.dart';
 import 'package:flutter_weather/view/MBarChart.dart';
+import 'package:flutter_weather/view/MPieChart.dart';
 
 class TodayPage extends StatefulWidget {
   @override
@@ -93,12 +94,11 @@ class _TodayState extends State<TodayPage> {
               ),
               child: Center(
                 child: Text(
-                  "${cityItem.name} ${weatherItem == null ? "" : " ${weatherItem.dateString()}"}",
+                  "${cityItem.name} ${weatherItem == null ? "" : " ${weatherItem.temp}F"}",
                   style: TextStyle(
-                    color: Colors.blueAccent,
-                    fontWeight: FontWeight.w700,
-                    fontSize: TEXT_SIZE_LARGE,
-                  ),
+                      color: Colors.blueAccent,
+                      fontWeight: FontWeight.w700,
+                      fontSize: TEXT_SIZE_LARGE),
                 ),
               ),
             ),
@@ -132,6 +132,18 @@ class _TodayState extends State<TodayPage> {
     return MBarChart(list);
   }
 
+  Widget _chartPie() {
+    if (weatherItem == null) return Container();
+    var list = List<PiePoint>();
+    var p1 = PiePoint(0, weatherItem.temp / 2.0);
+    var p2 = PiePoint(1, weatherItem.pressure / 10.0);
+    var p3 = PiePoint(2, weatherItem.humidity);
+    list.add(p1);
+    list.add(p2);
+    list.add(p3);
+    return MPieChart(list);
+  }
+
   Widget _tabView() {
     return DefaultTabController(
         length: 3,
@@ -160,7 +172,7 @@ class _TodayState extends State<TodayPage> {
               child: TabBarView(children: [
                 _chartLine(),
                 _chartBar(),
-                _chartLine(),
+                _chartPie(),
               ]),
             )
           ],

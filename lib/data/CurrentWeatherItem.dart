@@ -7,14 +7,14 @@ import 'package:intl/intl.dart';
 import 'dart:convert';
 
 class CurrentWeatherItem {
-  CurrentWeatherItem({
-    this.time,
-    this.temp,
-    this.pressure,
-    this.humidity,
-    this.temp_min,
-    this.temp_max,
-  });
+  CurrentWeatherItem(
+      {this.time,
+      this.temp,
+      this.pressure,
+      this.humidity,
+      this.temp_min,
+      this.temp_max,
+      this.weather});
 
   final int time;
   final double temp;
@@ -22,11 +22,13 @@ class CurrentWeatherItem {
   final double humidity;
   final double temp_min;
   final double temp_max;
+  final String weather;
 
   static Future<CurrentWeatherItem> pareItem(String body) async {
     JsonDecoder decoder = new JsonDecoder();
     var current = await decoder.convert(body);
     var main = current["main"];
+    var w = current["weather"]["main"];
     var item = CurrentWeatherItem(
       time: current["dt"],
       temp: main["temp"],
@@ -34,13 +36,14 @@ class CurrentWeatherItem {
       humidity: main["humidity"].toDouble(),
       temp_min: main["temp_min"].toDouble(),
       temp_max: main["temp_max"].toDouble(),
+      weather: w,
     );
     return item;
   }
 
   String dateString() {
     var t = DateTime.now();
-    var format = DateFormat("yyyy-MM-dd HH:mm");
+    var format = DateFormat("HH:mm");
     return format.format(t);
   }
 }
