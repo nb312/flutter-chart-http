@@ -18,7 +18,6 @@ class CityItem {
   final int id;
   final String name;
   final String country;
-
   static CityItem pareJson(json) {
 //    JsonDecoder decoder = new JsonDecoder();
 //    var itemJ = decoder.convert(json);

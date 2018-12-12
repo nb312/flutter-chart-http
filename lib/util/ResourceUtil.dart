@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter_weather/data/CityItem.dart';
+import 'package:flutter_weather/const/string_const.dart';
 
 const _CITIES_JSON = "assets/json/citys.json";
 
@@ -23,5 +24,14 @@ class ResourceUtil {
       list.add(item);
     }
     return list;
+  }
+
+  static Image imageCover(name, {double size}) {
+    return Image.asset(
+      "$ASSET_IMAGE_PATH$name",
+      fit: BoxFit.fitHeight,
+      width: size,
+      height: size,
+    );
   }
 }

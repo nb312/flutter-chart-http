@@ -18,7 +18,7 @@ const APP_ID = "APPID";
 const JSON_HEADER = {"Accept": "application/json"};
 
 class HttpUtil {
-  static void currentWeather(cityId) async {
+  static Future<CurrentWeatherItem> currentWeather(cityId) async {
     var response = await http.get(
         "$WEATHER_CURRENT?$APP_ID=$WEATHER_API_KEY&id=$cityId",
         headers: JSON_HEADER);
@@ -26,7 +26,9 @@ class HttpUtil {
       print("current:${response.body}");
       var item = await CurrentWeatherItem.pareItem(response.body);
       print("temp:${item.temp}");
+      return item;
     }
+    return null;
   }
 
   static void forecastWeather(cityId) async {
