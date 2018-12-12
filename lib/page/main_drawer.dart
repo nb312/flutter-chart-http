@@ -10,6 +10,8 @@ import 'package:flutter_weather/const/size_const.dart';
 import 'package:flutter_weather/data/CityItem.dart';
 import 'package:flutter_weather/util/ResourceUtil.dart';
 import 'package:flare_flutter/flare_actor.dart';
+import 'package:flutter_weather/http/HttpUtil.dart';
+import 'package:flutter_weather/data/CurrentWeatherItem.dart';
 
 class MainDrawer extends StatefulWidget {
   @override
@@ -71,6 +73,8 @@ class _DrawerState extends State<MainDrawer> {
         child: ListTile(
           onTap: () {
             print("city.name: ${item.name},id: ${item.id}");
+            HttpUtil.currentWeather(item.id);
+            HttpUtil.forecastWeather(item.id);
           },
           leading: CircleAvatar(
             child: _textWhite(item.name[0].toUpperCase(),
