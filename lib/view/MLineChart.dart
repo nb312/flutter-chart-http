@@ -4,17 +4,16 @@
 /// Email: niebin312@gmail.com
 ///
 import 'package:flutter/material.dart';
-import 'package:charts_flutter/flutter.dart';
+import 'package:charts_flutter/flutter.dart' as chart;
 import 'char_point.dart';
 
 class MLineChart extends StatelessWidget {
   MLineChart(this.points);
 
   final List<LinePoint> points;
-
-  List<Series<LinePoint, num>> datumList() {
+  List<chart.Series<LinePoint, num>> datumList() {
     return [
-      Series<LinePoint, num>(
+      chart. Series<LinePoint, num>(
           id: "line",
           data: points,
           domainFn: (LinePoint point, _) => point.x,
@@ -27,7 +26,7 @@ class MLineChart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       constraints: BoxConstraints.expand(),
-      child: LineChart(datumList()),
+      child:   chart.LineChart(datumList()) ,
     );
   }
 }

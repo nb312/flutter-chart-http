@@ -31,7 +31,7 @@ class HttpUtil {
     return null;
   }
 
-  static void forecastWeather(cityId) async {
+  static Future<List<ForecastWeatherItem>> forecastWeather(cityId) async {
     var response = await http.get(
         "$WEATHER_FORECAST?$APP_ID=$WEATHER_API_KEY&id=$cityId",
         headers: JSON_HEADER);
@@ -39,8 +39,10 @@ class HttpUtil {
       print("forecast:${response.body}");
       var list = await ForecastWeatherItem.pareItems(response.body);
       print("size:${list.length}");
+      return list;
 //      JsonDecoder decoder = new JsonDecoder();
 //      var cities = await decoder.convert(response.body);
     }
+    return null;
   }
 }
