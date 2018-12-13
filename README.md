@@ -6,9 +6,12 @@
 --- | --- | --- | ---
 Drawer | Json in assets | Http | Line chart |
 TabView | Flare animation | EventBus | Bar chart |
-|Pie chart | 
+|Pie chart | shared_preferences | async | 
 
-<img src="./screen/weather_3.png" width="320">_____<img src="./screen/weather_4.png" width="320">
-<img src="./screen/weather_1.png" width="320">_____<img src="./screen/weather_2.png" width="320">
+<img src="./screen/weather_3.png" width="240"><img src="./screen/weather_4.png" width="240"><img src="./screen/weather_2.png" width="240">
 
-<img src="./screen/weather_today.gif" width="320">   
+<img src="./screen/weather_5.png" width="240"><img src="./screen/weather_6.png" width="240"><img src="./screen/weather_7.png" width="240">
+
+<img src="./screen/weather_1.png" width="320"><img src="./screen/weather_future.gif" width="320">  
+
+ 
