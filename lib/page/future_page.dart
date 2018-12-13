@@ -14,6 +14,8 @@ import 'package:flutter_weather/const/size_const.dart';
 import 'package:flutter_weather/view/MBarChart.dart';
 import 'package:flutter_weather/view/MPieChart.dart';
 import 'package:flutter_weather/const/color_const.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_weather/util/share_prefer.dart';
 
 class FuturePage extends StatefulWidget {
   @override
@@ -24,11 +26,27 @@ class _FutureState extends State<FuturePage> {
   CityItem cityItem;
   List<ForecastWeatherItem> forecastItems;
 
+  Future<Null> updateCity() async {
+    var sp = await SharedPreferences.getInstance();
+    var list = sp.getStringList(LOCAL_CITY);
+    if (list != null && list.isNotEmpty) {
+      cityItem =
+          CityItem(id: int.parse(list[0]), name: list[1], country: list[2]);
+    } else {
+      await sp.setStringList(
+        LOCAL_CITY,
+        ["1796236", "Shanghai", "CN"],
+      );
+      cityItem = CityItem(id: 1796236, name: "Shanghai", country: "CN");
+    }
+  }
+
   @override
   void initState() {
     super.initState();
-    cityItem = CityItem(id: 1796236, name: "Shanghai", country: "CN");
-    _updateData(cityItem);
+    updateCity().then((_) {
+      _updateData(cityItem);
+    });
     EventUtil.busEvent.on<CityEvent>().listen((event) {
       print("hello aaaaa");
       setState(() {
@@ -126,7 +144,7 @@ class _FutureState extends State<FuturePage> {
 
   Widget _tabs() {
     return Container(
-      color:MAIN_COLOR,
+      color: MAIN_COLOR,
       constraints: BoxConstraints.expand(height: 40.0),
       child: TabBar(
         tabs: [
@@ -186,13 +204,15 @@ class _FutureState extends State<FuturePage> {
           child: Column(
             children: <Widget>[
               _tabs(),
-              Expanded(
-                child: TabBarView(children: [
-                  _bodyChart(ChartType.Line),
-                  _bodyChart(ChartType.Bar),
-                  _bodyChart(ChartType.Circle),
-                ]),
-              ),
+              cityItem == null
+                  ? Container()
+                  : Expanded(
+                      child: TabBarView(children: [
+                        _bodyChart(ChartType.Line),
+                        _bodyChart(ChartType.Bar),
+                        _bodyChart(ChartType.Circle),
+                      ]),
+                    ),
             ],
           )),
     );

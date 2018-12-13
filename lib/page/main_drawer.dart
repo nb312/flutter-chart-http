@@ -14,6 +14,8 @@ import 'package:flutter_weather/http/HttpUtil.dart';
 import 'package:flutter_weather/data/CurrentWeatherItem.dart';
 import 'package:flutter_weather/const/color_const.dart';
 import 'package:flutter_weather/data/event/base_event.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_weather/util/share_prefer.dart';
 
 class MainDrawer extends StatefulWidget {
   @override
@@ -73,6 +75,12 @@ class _DrawerState extends State<MainDrawer> {
     );
   }
 
+  Future<Null> _updateCity(CityItem item) async {
+    var sp = await SharedPreferences.getInstance();
+    await sp.setStringList(
+        LOCAL_CITY, [item.id.toString(), item.name, item.country]);
+  }
+
   Widget _cityWidget(CityItem item) {
     return Container(
         decoration: BoxDecoration(
@@ -84,10 +92,12 @@ class _DrawerState extends State<MainDrawer> {
         margin: EdgeInsets.only(bottom: 1.0),
         child: ListTile(
           onTap: () {
-            var event = CityEvent(cityItem: item);
-            EventUtil.busEvent.fire(event);
-            print("city.name: ${item.name},id: ${item.id}");
-            Navigator.pop(context);
+            _updateCity(item).then((_) {
+              var event = CityEvent(cityItem: item);
+              EventUtil.busEvent.fire(event);
+              print("city.name: ${item.name},id: ${item.id}");
+              Navigator.pop(context);
+            });
           },
           leading: CircleAvatar(
             child: _textWhite(item.name[0].toUpperCase(),

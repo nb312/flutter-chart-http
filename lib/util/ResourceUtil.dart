@@ -10,6 +10,7 @@ import 'package:flutter_weather/const/string_const.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 const _CITIES_JSON = "assets/json/citys.json";
 final databaseReference = FirebaseDatabase.instance.reference();
@@ -30,7 +31,6 @@ class ResourceUtil {
     }
     return list;
   }
-
   static Image imageCover(name, {double size}) {
     return Image.asset(
       "$ASSET_IMAGE_PATH$name",

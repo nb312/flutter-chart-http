@@ -43,6 +43,10 @@ class _MainState extends State<MainPage> {
     return list;
   }
 
+  void initState() {
+    super.initState();
+  }
+
   Widget _body() {
     switch (_currentPage) {
       case 0:

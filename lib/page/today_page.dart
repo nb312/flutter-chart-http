@@ -17,6 +17,8 @@ import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 import 'package:flutter_weather/const/color_const.dart';
 import 'package:flutter_weather/view/MBarChart.dart';
 import 'package:flutter_weather/view/MPieChart.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_weather/util/share_prefer.dart';
 
 class TodayPage extends StatefulWidget {
   @override
@@ -36,10 +38,26 @@ class _TodayState extends State<TodayPage> {
   CityItem cityItem;
   CurrentWeatherItem weatherItem;
 
+  Future<Null> updateCity() async {
+    var sp = await SharedPreferences.getInstance();
+    var list = sp.getStringList(LOCAL_CITY);
+    if (list != null && list.isNotEmpty) {
+      cityItem =
+          CityItem(id: int.parse(list[0]), name: list[1], country: list[2]);
+    } else {
+      await sp.setStringList(
+        LOCAL_CITY,
+        ["1796236", "Shanghai", "CN"],
+      );
+      cityItem = CityItem(id: 1796236, name: "Shanghai", country: "CN");
+    }
+  }
+
   void initState() {
     super.initState();
-    cityItem = CityItem(id: 1796236, name: "Shanghai", country: "CN");
-    _updateWeather(cityItem);
+    updateCity().then((_) {
+      _updateWeather(cityItem);
+    });
     EventUtil.busEvent.on<CityEvent>().listen((event) {
       print("hello aaaaa");
       setState(() {
@@ -94,7 +112,9 @@ class _TodayState extends State<TodayPage> {
               ),
               child: Center(
                 child: Text(
-                  "${cityItem.name} ${weatherItem == null ? "" : " ${weatherItem.temp}F"}",
+                  cityItem == null
+                      ? ""
+                      : "${cityItem.name} ${weatherItem == null ? "" : " ${weatherItem.temp}F"}",
                   style: TextStyle(
                       color: Colors.blueAccent,
                       fontWeight: FontWeight.w700,

@@ -9,3 +9,4 @@ const ASSET_IMAGE_PATH = "assets/images/";
 const CONTENT_IS_EMPTY = "This content is empty!";
 
 const BOTTOM_STR_ITEMS = ["Today", "Future"];
+
